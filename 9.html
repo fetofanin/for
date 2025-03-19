@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Montar a tabuada de:"));
+        let inicio = parseInt(prompt("Começar por:"));
+        let fim = parseInt(prompt("Terminar em:"));
+
+        if (fim < inicio) {
+            alert("O valor final não pode ser menor que o valor inicial.");
+            fim = inicio;
+        }
+
+        let resultado = `Vou montar a tabuada de ${numero} começando em ${inicio} e terminando em ${fim}:\n`;
+        for (let i = inicio; i <= fim; i++) {
+            resultado += `${numero} X ${i} = ${numero * i}\n`;
+        }
+
+        alert(resultado);
+
+
+    </script>
+</body>
+</html>

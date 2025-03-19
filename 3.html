@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inicio = parseInt(prompt("Digite o início do intervalo:"));
+        let fim = parseInt(prompt("Digite o fim do intervalo:"));
+
+        let Par = 0;
+        let Impar = 0;
+
+        for (let i = inicio; i <= fim; i++) {
+            if (i % 2 === 0) {
+            Par++;
+            } else {
+            Impar++;
+            }
+        }
+
+        alert(`Quantidade de números pares: ${Par}`);
+        alert(`Quantidade de números ímpares: ${Impar}`);
+    </script>
+</body>
+</html>
